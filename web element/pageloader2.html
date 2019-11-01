@@ -1,0 +1,97 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            .cssload-container{
+                width: 195px;
+                margin: 0 auto;
+                margin-top: 230px;
+            }
+            .cssload-circle-1{
+                height: 195px;
+                width: 195px;
+                background: rgb(97,46,141);
+            }
+            .cssload-circle-2{
+                height: 163px;
+                width: 163px;
+                background: rgb(194,34,134);
+            }
+            .cssload-circle-3{
+                height: 130px;
+                width: 130px;
+                background: rgb(234,34,94);
+            }
+            .cssload-circle-4{
+                height: 98px;
+                width: 98px;
+                background: rgb(237,95,54);
+            }
+            .cssload-circle-5{
+                height: 65px;
+                width: 65px;
+                background: rgb(245,155,29);
+            }
+            .cssload-circle-6{
+                height: 33px;
+                width: 33px;
+                background: rgb(129,197,64);
+            }
+            .cssload-circle-7{
+                height: 16px;
+                width: 16px;
+                background: rgb(0,163,150);
+            }
+            .cssload-circle-8{
+                height: 8px;
+                width: 8px;
+                background: rgb(22,116,188);
+            }
+            .cssload-circle-1,
+            .cssload-circle-2,
+            .cssload-circle-3,
+            .cssload-circle-4,
+            .cssload-circle-5,
+            .cssload-circle-6,
+            .cssload-circle-7,
+            .cssload-circle-8{
+                border-bottom: none;
+                border-radius: 50%;
+                box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+                animation-name: cssload-spin;
+                animation-duration: 4600ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes cssload-spin{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+       <div class="cssload-container">
+           <div class="cssload-circle-1">
+               <div class="cssload-circle-2">
+                   <div class="cssload-circle-3">
+                       <div class="cssload-circle-4">
+                           <div class="cssload-circle-5">
+                               <div class="cssload-circle-6">
+                                   <div class="cssload-circle-7">
+                                       <div class="cssload-circle-8"></div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </body>
+    </html>

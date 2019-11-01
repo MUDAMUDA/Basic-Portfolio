@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title></title>
+    <style>
+        #loader{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 241px;
+            height: 241px;
+            margin: auto;
+        }
+        #loader .load{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 120.5px;
+            height: 100%;
+            margin: auto;
+        }
+        #loader .load:before{
+            content:'';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 120.5px;
+            height: 120.5px;
+            border-radius: 100%;
+            transform: scale(0);
+            
+        }
+        #loader .load:nth-child(7n+1){
+            transform: rotate(45deg);
+        }
+        #loader .load:nth-child(7n+1):before{
+            background: rgb(0,255,128);
+            animation: cssload-load 0.92s linear 0.12s infinite;
+        }
+        #loader .load:nth-child(7n+2){
+            transform: rotate(90deg);
+        }
+        #loader .load:nth-child(7n+2):before{
+            background: rgb(0,255,234);
+            animation: cssload-load 0.92s linear 0.30s infinite;
+        }
+        #loader .load:nth-child(7n+3){
+            transform: rotate(135deg);
+        }
+        #loader .load:nth-child(7n+3):before{
+            background: rgb(0,170,255);
+            animation: cssload-load 0.92s linear 0.33s infinite;
+        }
+        #loader .load:nth-child(7n+4){
+            transform: rotate(180deg);
+        }
+        #loader .load:nth-child(7n+4):before{
+            background: rgb(0,199,253);
+            animation: cssload-load 0.92s linear 0.45s infinite;
+        }
+        #loader .load:nth-child(7n+5){
+            transform: rotate(255deg);
+        }
+        #loader .load:nth-child(7n+5):before{
+            background: rgb(0,33,255);
+            animation: cssload-load 0.92s linear 0.40s infinite;
+        }
+        #loader .load:nth-child(7n+6){
+            transform: rotate(225deg);
+        }
+        #loader .load:nth-child(7n+6):before{
+            background: rgb(0,190,110);
+            animation: cssload-load 0.92s linear 0.21s infinite;
+        }
+        #loader .load:nth-child(7n+7){
+            transform: rotate(350deg);
+        }
+        #loader .load:nth-child(7n+7):before{
+            background: magenta;
+            animation: cssload-load 0.92s linear 0.90s infinite;
+        }
+        #loader .load:nth-child(7n+8){
+            transform: rotate(360deg);
+        }
+        #loader .load:nth-child(7n+8):before{
+            background: magenta;
+            animation: cssload-load 0.92s linear 0.95s infinite;
+        }
+        
+        @keyframes cssload-load{
+            100%{
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="load"></div>
+        <div class="load"></div>    
+        <div class="load"></div>    
+        <div class="load"></div>    
+        <div class="load"></div>    
+        <div class="load"></div>    
+        <div class="load"></div>    
+        <div class="load"></div>    
+    </div>    
+    
+</body>
+</html>

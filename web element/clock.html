@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .cssload-clock{
+            width: 180px;
+            height:180px;
+            position: relative;
+            left: 35%
+            left: calc(50% - 97px);
+            border: 7px solid black;
+            border-radius: 135px;
+            margin-top: 135px;
+            }
+         
+        .cssload-clock:after{
+            content: "";
+            position: absolute;
+            background: black;
+            top: 5px;
+            left: 48%;
+            height: 86px;
+            width: 9px;
+            border-radius: 11px;
+            transform-origin: 50% 97%;
+            animation-name:penis;
+            animation-duration: 2.3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;    
+            }
+        
+        .cssload-clock:before{
+            content: "";
+            position: absolute;
+            background: black;
+            top: 14px;
+            left: 48%;
+            height: 79px;
+            width: 9px;
+            border-radius: 11px;
+            transform-origin: 50% 94%;
+            animation-name:penis;
+            animation-duration: 19.3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            }
+        @keyframes penis{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+ <div class="cssload-clock"></div>   
+</body>
+</html>
