@@ -1,0 +1,39 @@
+/*wrappers */
+.wrapper-main {
+    margin: 0 20vw;
+}
+
+.wrapper-gallery {
+    margin: 0 20vw;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+/* Page styling */
+#header-main nav {
+    display: grid;
+    grid-template-columns: 240px 3fr;
+    margin-bottom: 30px;
+    
+}
+
+
+.wrapper-main li {
+    display:inline;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    float:right;
+    
+}
+
+.wrapper-main a {
+    text-decoration: none;
+}
